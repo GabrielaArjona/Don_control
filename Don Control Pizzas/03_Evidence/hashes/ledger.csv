@@ -1,0 +1,8 @@
+artifact_path,artifact_type,control_id,run_id,timestamp_utc,sha256,signer,environment,pii_flag,notes
+01_Case/A_Access_Review/outputs/findings.csv,csv,C-AC-REV,AR-2025-09-12,2025-09-12T22:42:43Z,426790cb24b149c700ff591363a73f9bcaad7272c1c9d2be50ab77c941f554fb,GRC Lead,non-prod,synthetic,Access orphan & admin review
+01_Case/B_Backup_Restore_test/data/restored_orders.csv,csv,C-BR,BR-2025-09-12,2025-09-12T22:42:43Z,6c1ead514c83d437153b1a52fe9799f807f55daeab1add660a354eb3514eb302,ISMS,non-prod,synthetic,Backup/Restore evidence
+01_Case/B_Backup_Restore_test/logs/backup_log.txt,log,C-BR,BR-2025-09-12,2025-09-12T22:42:43Z,ab171b9b035de1f0b895b1a923739030fdeb4bb4e1d18abcdf0d065e8a0284f4,ISMS,non-prod,synthetic,Backup/Restore evidence
+01_Case/B_Backup_Restore_test/logs/restore_log.txt,log,C-BR,BR-2025-09-12,2025-09-12T22:42:43Z,21a37d034ad2334e4d8490fd58dcb8e5d1cda4e8f0ea989f10aaf6e4d33c6449,ISMS,non-prod,synthetic,Backup/Restore evidence
+01_Case/C_Data_Retention/data/customers_labels.csv,csv,C-RET,RET-2025-09-12,2025-09-12T22:42:43Z,b93700977bb9facc63f11e03b1012f3d19fa7c710fe42be739d13a979ac534da,Data Owner,non-prod,synthetic,Retention labels/purge evidence
+01_Case/C_Data_Retention/data/customers_after_purge.csv,csv,C-RET,RET-2025-09-12,2025-09-12T22:42:43Z,705043bf69a09d5772bbf11feaa703aee48e22294cd88247e55c402eb79b0ae4,Data Owner,non-prod,synthetic,Retention labels/purge evidence
+01_Case/C_Data_Retention/logs/purge_log.txt,log,C-RET,RET-2025-09-12,2025-09-12T22:42:43Z,0802e6d6add6c7ba843c78aeea6301f9d6e81fea27e8b3a2f993b1f0585c90cf,Data Owner,non-prod,synthetic,Retention labels/purge evidence

@@ -1,0 +1,5 @@
+customer_id,full_name,email,phone,address,last_order_date
+c001,Ana Perez,ana@example.com,+52-999-111-2222,Calle 1 #100,2024-01-10
+c002,Luis Gomez,luis@example.com,+52-999-222-3333,Calle 2 #200,2023-01-05
+c003,Marta Diaz,marta@example.com,+52-999-333-4444,Calle 3 #300,2022-12-25
+c004,Sofia Cruz,sofia@example.com,+52-999-444-5555,Calle 4 #400,2025-07-15

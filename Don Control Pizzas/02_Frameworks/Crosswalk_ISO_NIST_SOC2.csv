@@ -1,0 +1,5 @@
+ISO27001,NIST_CSF,SOC2,Intent
+A.5.16 Identity management,PR.AC,CC6.x,"Identity lifecycle, least privilege, MFA"
+A.8.3 Information access restriction,PR.AC,CC6.x,"RBAC, need-to-know, periodic reviews"
+A.8.9 Configuration management,PR.IR,CC7.x,"Baselines, hardening, change approvals"
+A.8.10 Information deletion,PR.DS,CC8,Retention & secure deletion

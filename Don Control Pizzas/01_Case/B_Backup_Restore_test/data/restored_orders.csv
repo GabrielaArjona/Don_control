@@ -1,0 +1,5 @@
+order_id,order_ts,customer_id,amount,status
+1,2025-08-01 12:03:00,c001,280.0,delivered
+2,2025-08-01 12:15:00,c002,195.0,delivered
+3,2025-08-01 12:28:00,c003,120.0,refunded
+4,2025-08-01 12:40:00,c004,350.0,delivered

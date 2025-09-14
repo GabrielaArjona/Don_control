@@ -1,0 +1,5 @@
+role,priv_level
+POS_Admin,9
+POS_User,3
+CRM_Admin,9
+CRM_User,3

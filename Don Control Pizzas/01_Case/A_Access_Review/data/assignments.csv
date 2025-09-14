@@ -1,0 +1,6 @@
+uid,role
+u001,POS_Admin
+u001,CRM_User
+u002,CRM_User
+u003,POS_User
+u004,CRM_Admin

@@ -1,0 +1,5 @@
+uid,name,dept,active
+u001,Alice,Ops,True
+u002,Bob,Delivery,False
+u003,Carol,Sales,True
+u004,Dave,Ops,True

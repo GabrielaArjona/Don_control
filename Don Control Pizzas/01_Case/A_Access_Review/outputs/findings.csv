@@ -1,0 +1,4 @@
+uid,role,issue,severity,priv_level
+u002,CRM_User,orphan_or_inactive_user_with_access,High,
+u001,POS_Admin,high_privilege_review_required,Medium,9.0
+u004,CRM_Admin,high_privilege_review_required,Medium,9.0
