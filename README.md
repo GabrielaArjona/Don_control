@@ -3,11 +3,21 @@
 **Focus:** Access control, availability (backup/restore), data retention  
 **Data:** 100% synthetic (no real PII)
 
-A tangible, audit-friendly portfolio applying GRC controls to a simple, relatable business (a pizza shop with online orders and delivery partners). The repo shows **end-to-end control execution**: policy → procedure/runbook → scripts/notebooks → evidence → one-page reports → crosswalk to frameworks.
+A tangible, audit-friendly project applying GRC controls to a simple, relatable business (a pizza shop with online orders and delivery partners). The repo shows **end-to-end control execution**: policy → procedure/runbook → scripts/notebooks → evidence → one-page reports → crosswalk to frameworks.
 
 ---
+## Table of Contents
+- [What to look at first](#what-to-look-at-first)
+- [Business processes and assets](#business-processes-and-assets)
+- [Mini-projects overview](#mini-projects-overview)
+  - [A) Access Review](#access-review)
+  - [B) Backup & Restore Test](#backup--restore-test)
+  - [C) Data Classification & Retention](#data-classification--retention)
+- [Repository layout](#repository-layout)
+- [Screenshots](#screenshots)
+---
 
-## 🔎 What to look at first
+## What to look at first 
 - `01_case/` — three mini-projects with code, data, logs and reports  
   - **A_access_review/** (Who has the keys?)  
   - **B_Backup_Restore_test/** (Proof of life)  
@@ -19,7 +29,7 @@ A tangible, audit-friendly portfolio applying GRC controls to a simple, relatabl
 
 ---
 
-## 🧭 Business processes & assets (scenario)
+## Business processes and assets
 - **POS / Online ordering** (orders, payments)  
 - **CRM** (customers: names, addresses, phones, loyalty)  
 - **Payment gateway** (third-party)  
@@ -28,9 +38,9 @@ A tangible, audit-friendly portfolio applying GRC controls to a simple, relatabl
 
 ---
 
-## 🧩 Mini-projects (overview)
+## Mini-projects (overview)
 
-### A) Access Review — “Who has the keys?”
+### Access Review — “Who has the keys?”
 **Goal:** Ensure only authorized users hold access; recertify high-privilege roles.  
 **Inputs:** `data/users.csv`, `data/roles.csv`, `data/assignment.csv`  
 **Output:** `outputs/findings.csv` (orphans/inactive + high-privilege)  
@@ -38,7 +48,7 @@ A tangible, audit-friendly portfolio applying GRC controls to a simple, relatabl
 **KPIs (targets):** 100% critical apps reviewed monthly · orphans=0 post-review · findings closed ≤30 days  
 **Frameworks:** ISO 27001 A.5.16 / A.8.3 · NIST CSF **PR.AC** · SOC 2 **CC6.x**
 
-### B) Backup & Restore Test — “Proof of life”
+### Backup & Restore Test — “Proof of life”
 **Goal:** Demonstrate recoverability (Availability) with real evidence (RTO/RPO).  
 **Inputs:** `data/orders.csv`  
 **Outputs:** `backups/orders_YYYY-MM-DD.csv`, `data/restored_orders.csv`, `logs/backup_log.txt`, `logs/restore_log.txt`  
@@ -46,7 +56,7 @@ A tangible, audit-friendly portfolio applying GRC controls to a simple, relatabl
 **KPIs (targets):** Success rate 100% · **RTO ≤ 30 min** · **RPO ≤ 1 h** · backup age ≤ 24 h · data integrity 100%  
 **Frameworks:** ISO 27001 A.8.13 / A.5.30 · NIST CSF **Recover (RC)** · SOC 2 **Availability**
 
-### C) Data Classification & Retention — “Data diet”
+### Data Classification & Retention — “Data diet”
 **Goal:** Label PII and enforce deletion when no longer necessary (storage limitation).  
 **Inputs:** `data/customers.csv`  
 **Outputs:** `data/customers_labels.csv`, `data/customers_after_purge.csv`, `logs/purge_log.txt`  
@@ -56,7 +66,11 @@ A tangible, audit-friendly portfolio applying GRC controls to a simple, relatabl
 
 ---
 
-## 🗂️ Repository layout (as shipped)
+## Repository layout
+<details>
+<summary>Click to expand</summary>
+
+  ```
 Don Control Pizzas 1/
 ├─ 01_case/
 │ ├─ A_access_review/
@@ -78,4 +92,17 @@ Don Control Pizzas 1/
 │ ├─ RCM.xlsx
 │ └─ SoA.xlsx
 └─ 03_Evidence/
-└─ hashes/ # evidence_ledger_builder.ipynb, ledger.csv
+    └─ hashes/ # evidence_ledger_builder.ipynb, ledger.csv
+  ```
+</details>  
+
+---
+
+##  Screenshots
+
+<div style="display: flex; flex-direction: row;">
+  <img  style="margin-bottom: 10px;" src="Don Control Pizzas/Captura de pantalla 2025-09-13 233244.png" alt="project" width="350" height="250">
+  <img  style="margin-bottom: 10px;" src="Don Control Pizzas/Captura de pantalla 2025-09-13 234052.png" width="350" height="250">
+  
+
+</div>
